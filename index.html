@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>JavaScript-Calculator</title>
+      <link rel="stylesheet" href="style/dark.css" id="theme" />
+      <style>
+         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+      </style>
+      <script
+         src="https://kit.fontawesome.com/f491eb20d0.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+   <body>
+      <div class="container">
+         <h1 class="header">Calculator</h1>
+         <div class="source">
+            <a href="https://github.com/signuldotdev/JavaScript-Calculator"
+               ><i class="fa fa-github fa_custom fa-3x"></i
+            ></a>
+         </div>
+         <div class="theme">
+            <button onclick="changeTheme()" id="dark-mode">
+               <i class="fa-solid fa-bolt-lightning fa_theme fa-3x"></i>
+            </button>
+         </div>
+
+         <div class="result">
+            <input
+               type="text"
+               class="result"
+               id="result"
+               value=""
+               placeholder="0"
+               readonly
+            />
+         </div>
+         <div class="first-row">
+            <input
+               class="button-clear"
+               type="button"
+               value="C"
+               onclick="clearScreen()"
+               id="clear"
+            />
+            <input
+               class="button-backspace"
+               type="button"
+               value="🔙"
+               onclick="backSpace()"
+               id="backspace"
+            />
+            <input
+               class="button-percent"
+               type="button"
+               value="%"
+               onclick="percent()"
+               id="percent"
+            />
+         </div>
+
+         <div class="second-row">
+            <input
+               class="button-one"
+               type="button"
+               value="1"
+               onclick="liveScreen(1)"
+               id="one"
+            />
+            <input
+               class="button-two"
+               type="button"
+               value="2"
+               onclick="liveScreen(2)"
+               id="two"
+            />
+            <input
+               class="button-three"
+               type="button"
+               value="3"
+               id="three"
+               onclick="liveScreen(3)"
+            />
+            <input
+               class="button-plus"
+               type="button"
+               value="+"
+               onclick="liveScreen('+')"
+            />
+         </div>
+         <div class="third-row">
+            <input
+               class="button-four"
+               type="button"
+               value="4"
+               id="four"
+               onclick="liveScreen(4)"
+            />
+            <input
+               class="button-five"
+               type="button"
+               value="5"
+               id="five"
+               onclick="liveScreen(5)"
+            />
+            <input
+               class="button-six"
+               type="button"
+               value="6"
+               id="six"
+               onclick="liveScreen(6)"
+            />
+            <input
+               class="button-minus"
+               type="button"
+               value="-"
+               onclick="liveScreen('-')"
+            />
+         </div>
+         <div class="fourth-row">
+            <input
+               class="button-seven"
+               type="button"
+               value="7"
+               id="seven"
+               onclick="liveScreen(7)"
+            />
+            <input
+               class="button-eight"
+               type="button"
+               value="8"
+               id="eight"
+               onclick="liveScreen(8)"
+            />
+            <input
+               class="button-nine"
+               type="button"
+               value="9"
+               id="nine"
+               onclick="liveScreen(9)"
+            />
+            <input
+               class="button-multiply"
+               type="button"
+               value="x"
+               onclick="liveScreen('*')"
+            />
+         </div>
+         <div class="fifth-row">
+            <input
+               class="button-divide"
+               type="button"
+               value="/"
+               onclick="liveScreen('/')"
+            />
+
+            <input
+               class="button-zero"
+               type="button"
+               value="0"
+               id="zero"
+               onclick="liveScreen(0)"
+            />
+            <input
+               class="button-dot"
+               type="button"
+               value="."
+               class="dot"
+               onclick="liveScreen('.')"
+            />
+            <input
+               class="button-equal"
+               type="button"
+               value="="
+               onclick="result.value = eval(result.value||null)"
+            />
+         </div>
+      </div>
+
+      <script src="script/script.js" defer></script>
+   </body>
+</html>
