@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/signuldotdev/Javascript-Calculator">
-    <img src="assets/calculator.png" alt="Logo" width="130" height="130">
+    <img src="assets/calculator.png" alt="Logo" width="160" height="160">
   </a>
 
   <h2 align="center">Javascript~Calculator</h2>
